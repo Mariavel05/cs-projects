@@ -1,24 +1,23 @@
-# Cyber Crime Investigation
+# RU Maps
 
-This project implements a cyber crime investigation system that tracks and analyzes hacker activity using core data structures. The system efficiently manages a large set of hacker records and their associated incidents.
+This project implements a graph-based mapping system that models locations as vertices and connections as edges. The system supports efficient analysis of routes and connectivity using fundamental graph algorithms.
 
 ## Overview
-The database is implemented as a dynamically resizing hash table with separate chaining (an array of linked lists). Each hacker may be associated with multiple incidents, and the system supports efficient insertion, searching, deletion, and analysis of records as data grows.
+The map is represented as a graph where nodes correspond to locations and weighted edges represent paths between them. This structure enables efficient traversal and route computation, allowing the system to analyze connectivity and determine efficient paths between locations.
 
 ## Key Concepts
-- Hash tables with separate chaining
-- Dynamic resizing and rehashing
-- Linked list insertion and deletion
-- Priority queue (max-heap) for ranking hackers
-- Handling duplicates and edge cases
+- Graph representations
+- Pathfinding algorithms
+- Algorithmic efficiency and correctness
+- Data structure design for traversal and analysis
 
 ## Functionality
-- Insert hackers and incidents while preventing duplicate entries
-- Search for hackers by name
-- Remove hackers using linked-list deletion
-- Merge duplicate hacker identities based on incident counts
-- Retrieve the top N most wanted hackers using a priority queue
-- Query hackers by incident location
+- Construct a graph from input data
+- Represent locations and connections as vertices and edges
+- Compute efficient routes between locations
+- Analyze connectivity between different points in the graph
+- Support queries for shortest or fastest paths
 
 ## My Contributions
-I implemented all core logic in `CyberCrimeInvestigation.java`, including collision handling, resizing and rehashing, deletion, merging hacker identities, and analytical queries. This project emphasized correctness, efficiency, and careful reasoning about edge cases and data structure invariants.
+I implemented the core graph representation and pathfinding logic in `RUMaps.java`, focusing on correctness, efficiency, and clean traversal of the graph. This project emphasized reasoning about graph structure, algorithmic trade-offs, and handling edge cases in path computation.
+
