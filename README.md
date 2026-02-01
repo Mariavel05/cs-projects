@@ -1,2 +1,2 @@
 # cs-projects
-Data structures and Algorithms Spring 2025 Projects. 
+ Selected Data structures and Algorithms Spring 2025 Projects. 
